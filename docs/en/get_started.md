@@ -49,7 +49,7 @@ conda install pytorch torchvision cpuonly -c pytorch
 
 ```shell
 pip install -U openmim
-mim install mmengine
+mim install "mmengine==0.1.0"
 mim install "mmcv>=2.0.0rc1,<2.1.0"
 mim install "mmdet>=3.0.0rc1,<3.1.0"
 ```
@@ -99,10 +99,24 @@ The downloading will take several seconds or more, depending on your network env
 Option (a). If you install MMYOLO from source, just run the following command.
 
 ```shell
-python demo/image_demo.py demo/demo.jpg yolov5_s-v61_syncbn_fast_8xb16-300e_coco.py yolov5_s-v61_syncbn_fast_8xb16-300e_coco_20220918_084700-86e02187.pth --device cpu --out-file result.jpg
+python demo/image_demo.py demo/demo.jpg \
+                          yolov5_s-v61_syncbn_fast_8xb16-300e_coco.py \
+                          yolov5_s-v61_syncbn_fast_8xb16-300e_coco_20220918_084700-86e02187.pth
+
+# Optional parameters
+# --out-dir ./output *The detection results are output to the specified directory. When args have action --show, the script do not save results. Default: ./output
+# --device cuda:0    *The computing resources used, including cuda and cpu. Default: cuda:0
+# --show             *Display the results on the screen. Default: False
+# --score-thr 0.3    *Confidence threshold. Default: 0.3
 ```
 
-You will see a new image `result.jpg` on your current folder, where bounding boxes are plotted.
+You will see a new image on your `output` folder, where bounding boxes are plotted.
+
+Supported input types:
+
+- Single image, include `jpg`, `jpeg`, `png`, `ppm`, `bmp`, `pgm`, `tif`, `tiff`, `webp`.
+- Folder, all image files in the folder will be traversed and the corresponding results will be output.
+- URL, will automatically download from the URL and the corresponding results will be output.
 
 Option (b). If you install MMYOLO with MIM, open your python interpreter and copy&paste the following codes.
 
@@ -141,7 +155,7 @@ To install MMEngine with pip instead of MIM, please follow \[MMEngine installati
 For example, you can install MMEngine by the following command.
 
 ```shell
-pip install mmengine
+pip install "mmengine==0.1.0"
 ```
 
 #### Install MMCV without MIM
@@ -194,7 +208,7 @@ thus we only need to install MMEngine, MMCV, MMDetection, and MMYOLO with the fo
 
 ```shell
 !pip3 install openmim
-!mim install mmengine
+!mim install "mmengine==0.1.0"
 !mim install "mmcv>=2.0.0rc1,<2.1.0"
 !mim install "mmdet>=3.0.0.rc1"
 ```

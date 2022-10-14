@@ -20,7 +20,7 @@
 
 [![PyPI](https://img.shields.io/pypi/v/mmyolo)](https://pypi.org/project/mmyolo)
 [![docs](https://img.shields.io/badge/docs-latest-blue)](https://mmyolo.readthedocs.io/en/latest/)
-[![badge](https://github.com/open-mmlab/mmyolo/workflows/build/badge.svg)](https://github.com/open-mmlab/mmyolo/actions)
+[![deploy](https://github.com/open-mmlab/mmyolo/workflows/deploy/badge.svg)](https://github.com/open-mmlab/mmyolo/actions)
 [![codecov](https://codecov.io/gh/open-mmlab/mmyolo/branch/master/graph/badge.svg)](https://codecov.io/gh/open-mmlab/mmyolo)
 [![license](https://img.shields.io/github/license/open-mmlab/mmyolo.svg)](https://github.com/open-mmlab/mmyolo/blob/master/LICENSE)
 [![open issues](https://isitmaintained.com/badge/open/open-mmlab/mmyolo.svg)](https://github.com/open-mmlab/mmyolo/issues)
@@ -85,7 +85,7 @@ MMYOLO 依赖 PyTorch, MMCV, MMEngine 和 MMDetection，以下是安装的简要
 conda create -n open-mmlab python=3.8 pytorch==1.10.1 torchvision==0.11.2 cudatoolkit=11.3 -c pytorch -y
 conda activate open-mmlab
 pip install openmim
-mim install mmengine
+mim install "mmengine==0.1.0"
 mim install "mmcv>=2.0.0rc1,<2.1.0"
 mim install "mmdet>=3.0.0rc1,<3.1.0"
 git clone https://github.com/open-mmlab/mmyolo.git
@@ -124,7 +124,10 @@ MMYOLO 用法和 MMDetection 几乎一致，所有教程都是通用的，你也
 
 - 进阶指南
 
-  - [How to](https://mmyolo.readthedocs.io/zh_CN/3.x/advanced_guides/index.html#how-to)
+  - [数据流](docs/zh_cn/advanced_guides/data_flow.md)
+  - [How to](docs/zh_cn/advanced_guides/how_to.md)
+
+- [解读文章和资源汇总](docs/zh_cn/article.md)
 
 ## 基准测试和模型库
 
