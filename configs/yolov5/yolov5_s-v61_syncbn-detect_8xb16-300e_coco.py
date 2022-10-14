@@ -8,7 +8,7 @@ test_pipeline = [
         type='LetterResize',
         scale=_base_.img_scale,
         allow_scale_up=True,
-        use_mini_pad=True),
+        use_mini_pad=False),
     dict(type='LoadAnnotations', with_bbox=True),
     dict(
         type='mmdet.PackDetInputs',
