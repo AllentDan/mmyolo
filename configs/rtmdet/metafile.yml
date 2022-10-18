@@ -9,7 +9,7 @@ Collections:
       Architecture:
         - CSPNeXt
         - CSPNeXtPAFPN
-    README: configs/rtmdet/README.md
+    README: configs/rtmdet/convert_model.md
     Code:
       URL: https://github.com/open-mmlab/mmyolo/blob/main/mmyolo/models/detectors/yolo_detector.py#L12
       Version: v0.1.1
