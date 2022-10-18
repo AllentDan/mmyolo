@@ -8,7 +8,7 @@ import numpy as np
 
 url_prefix = 'https://github.com/open-mmlab/mmyolo/blob/main/'
 
-files = sorted(glob.glob('../configs/*/convert_model.md'))
+files = sorted(glob.glob('../configs/*/README.md'))
 
 stats = []
 titles = []

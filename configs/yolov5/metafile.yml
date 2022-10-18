@@ -11,7 +11,7 @@ Collections:
       Architecture:
         - CSPDarkNet
         - PAFPN
-    README: configs/yolov5/convert_model.md
+    README: configs/yolov5/README.md
     Code:
       URL: https://github.com/open-mmlab/mmyolo/blob/v0.1.0/mmyolo/models/detectors/yolo_detector.py#L12
       Version: v0.1.0
