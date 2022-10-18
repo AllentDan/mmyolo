@@ -64,4 +64,4 @@ python ./tools/deploy.py \
 
 ## How to evaluate the exported models
 
-You can try to evaluate model, referring to [how_to_evaluate_a_model](profile_model.md).
+You can try to evaluate model, referring to [how_to_evaluate_a_model](eval_model.md).
