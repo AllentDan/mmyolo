@@ -47,7 +47,7 @@ python ./tools/deploy.py \
 ### How to find the corresponding deployment config of a PyTorch model
 
 1. Find model's codebase folder in `configs/`. Example, convert a yolov5 model you need to find `/the/root/path/of/MMYOLO/configs/yolov5` folder.
-3. Find deployment config file in `configs/deploy/`. Just like deploy yolov5 model you can use `/the/root/path/of/MMYOLO/configs/deploy/detection_tensorrt_static-640x640.py`.
+2. Find deployment config file in `configs/deploy/`. Just like deploy yolov5 model you can use `/the/root/path/of/MMYOLO/configs/deploy/detection_tensorrt_static-640x640.py`.
 
 ### Example
 
